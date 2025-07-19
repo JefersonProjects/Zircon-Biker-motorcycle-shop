@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    bottom: 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+#tabla-carrito {
+    max-width: 100%;
+    width: 100%;
+    border: 1px solid rgb(48, 48, 48);
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+#tabla-carrito tr, th, td {
+    border: 2px solid rgb(48, 48, 48);
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#tabla-carrito th {
+    background-color: rgb(224, 195, 31);
+}
+
+#tabla-carrito button {
+    padding: 10px;
+    width: 150px;
+    background-color: rgb(224, 195, 31);
+    border: none;
+    border-radius: 5px;
+    transition: box-shadow 0.3s linear 0.05s;
+    font-size: 1em;
+}
+
+#tabla-carrito #btnModCant {
+    width: 50px;
+}
+
+#tabla-carrito input[type="number"] {
+    border: none;
+}
+
+#tabla-carrito button:hover {
+    box-shadow: 3px 3px 3px #616164;
+}
+
+#tabla-carrito button:active {
+    background-color: #151516;
+    color: #d4d1da;
+}
+
+#form {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form label,
+#form input,
+#form select,
+#form button {
+    width: 100%;
+    margin-bottom: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#form input,
+#form select {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#form button {
+    padding: 1em;
+    border: none;
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#form button:hover {
+    background: #218838;
+}
+
+#paypal-button-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+

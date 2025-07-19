@@ -1,0 +1,211 @@
+hr {
+    height: 10px;
+    background-color: darkgrey;
+    margin: 15px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.titulo-2 {
+    line-height: 30px;
+    margin: 15px;
+    margin-bottom: 80px;
+}
+
+.fa-solid {
+    left: 15px;
+}
+
+.comparador-titulo {
+    color: gold;
+    text-transform: uppercase;
+}
+
+.label-buscador {
+    font-size: 2em;
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+    margin: 20px;
+}
+
+.input-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    width: 35%;
+    margin-bottom: 100px; /*margen para evitar el desbordamiento*/
+}
+
+.input-icon input {
+    padding: 15px 40px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.input-icon i.fa-solid {
+    position: absolute;
+    font-size: 1.3em;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Estilos del resultado de búsqueda */
+.results-dropdown-container {
+    position: absolute;
+    top: 100%; /* Posiciona el contenedor de resultados debajo del input */
+    width: 100%;
+    z-index: 1000;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    display: none; /* Ocultar inicialmente */
+}
+
+.results-title {
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: none;
+}
+
+.results-dropdown {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.results-dropdown div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.results-dropdown div:hover {
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Estilo para el contenedor de la comparación */
+#comparador {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+/* Estilo para cada tarjeta de moto */
+.moto-card {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: white;
+}
+
+/* Estilo para la imagen de la moto */
+.moto-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.moto-card h3 {
+    margin: 10px 0;
+}
+
+.moto-card hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+
+/* Estilo para los párrafos dentro de la tarjeta de moto */
+.moto-card p {
+    margin: 10px 0;
+    line-height: 2; /* Interlineado */
+}
+
+/* Estilo para el mensaje de alerta */
+.alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffcccb;
+    color: #d8000c;
+    padding: 15px;
+    border: 10px solid solid;
+    border-radius: 5px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Estilo para el botón de eliminar */
+.moto-card .delete-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.8em;
+    cursor: pointer;
+    color: red;
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 1024px) {
+    .input-icon {
+        width: 50%;
+    }
+
+    .moto-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .input-icon {
+        width: 70%;
+    }
+
+    .moto-card {
+        width: 90%;
+    }
+
+    .titulo, .titulo-2, .label-buscador {
+        font-size: 1.5em; 
+    }
+}
+
+@media (max-width: 480px) {
+    .input-icon {
+        width: 90%; 
+    }
+
+    .moto-card {
+        width: 100%;
+    }
+
+    .titulo, .titulo-2, .label-buscador {
+        font-size: 1.2em; 
+    }
+}

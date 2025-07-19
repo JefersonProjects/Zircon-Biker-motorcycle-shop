@@ -1,0 +1,424 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;/* Evita el desbordamiento horizontal */
+}
+
+/* Secciones de contenido */
+.contenido-principal {
+    height: 100%;
+}
+
+.contenido_1 {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-image: url('../imgs/Logos/FondoPrincipal1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.contenido_1 p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 45px;
+    text-align: left;
+    padding: 130px 110px;
+    color: #d4d1da;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 1px 3px #2f2f30;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(22, 22, 24);
+}
+
+#motoprin-1 {
+    height: auto;
+    max-height: 50vh; 
+    position: relative;
+    top: 300px;
+    right: 290px
+}
+
+
+/* Estilos para la seccion 2 */
+.contenido_2 {
+    background-color: gold;
+    width: 100%;
+    height: 100%;
+}
+
+.saludo {
+    font-family: 'bai_jamjureebold', sans-serif;
+    counter-reset: #353535;
+    font-size: 35px;
+    padding: 25px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.img-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    flex-wrap: wrap;
+    /* Añadido para responsive */
+}
+
+#mot,
+#ase,
+#acc {
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.contenido_2 img {
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid #0e0a38;
+    box-shadow: 5px 5px 2px #1e1f22;
+}
+
+/* Estilos para la seccion 3 */
+.contenido_3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0e0a38;
+    padding: 40px;
+    color: white;
+    gap: 20px;
+    /* Añadimos espacio entre los elementos */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan */
+}
+
+.texto-c3 {
+    flex: 1;
+    text-align: left;
+}
+
+.texto-c3 p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+#galeria {
+    flex: 1;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: none;
+    transition: active 0.3s linear 0.05s;
+}
+
+#galeria img.active {
+    display: block;
+}
+
+/* Seccion 4 */
+.contenido_4 {
+    display: flex;
+    background-color: #ffffff;
+    padding: 40px 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+    /* Centramos la sección */
+    box-sizing: border-box;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* Centramos el contenedor */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-width: 650px;
+    /* Ajusta el tamaño máximo de la imagen */
+    box-sizing: border-box;
+}
+
+.texto {
+    max-width: 600px;
+    margin-left: 20px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.texto h1 {
+    font-size: 2em;
+    margin: 0;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.texto h1 span {
+    color: #00FF00;
+    background: #666666;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.descripcion {
+    margin-top: 20px;
+}
+
+.descripcion h2 {
+    font-size: 1.5em;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.descripcion h2 span {
+    color: #FFD700;
+}
+
+.descripcion .pregunta,
+.descripcion .simulacion {
+    margin-bottom: 20px;
+}
+
+.descripcion h3 {
+    font-size: 1.5em;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.descripcion p {
+    font-size: 1.5em;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #FFD700;
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FFC107;
+}
+/*estilos para la notificacion*/
+.hidden {
+    display: none;
+}
+
+#notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 1000;
+    display: none; 
+}
+
+/* Diseño responsive INDEX*/
+/*------------------------------------------------pantallas medianas------------------------------------*/
+@media (max-width:1300px) {
+
+    /*Estilo contenido 1 */
+    .contenido_1 {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-image: url('../imgs/Logos/FondoPrincipal1.jpg');
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+    }
+
+    .contenido_1 p {
+        font-size: 30px;
+        text-align: center;
+        padding: 100px 50px;
+    }
+
+    #motoprin-1 {
+        position: absolute;
+        bottom: -550px;
+        left: 50%;
+        /* Centra la moto horizontalmente */
+        transform: translateX(-50%);
+        height: auto;
+        width: 450px;
+    }
+
+}
+
+/* Media query para altura de la ventana */
+@media (max-height: 400px) {
+    /* Ajustes específicos para cuando la altura de la ventana es menor a 800px */
+    #motoprin-1 {
+        display: none; /* Ocultar la imagen de la moto */
+    }
+}
+
+
+/*------------------------------------------------pantallas pequeñas------------------------------------*/
+@media (max-width: 700px) {
+
+    /*Estilo contenido 1 */
+    .contenido_1 p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 40px;
+        -webkit-text-stroke: 1px white;
+        text-align: center;
+        color: #d4d1da;
+        font-weight: bold;
+        padding: 50px 30px;
+        text-shadow: 2px 1px 3px #2f2f30;
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: rgb(22, 22, 24);
+    }
+
+    .contenido_1 {
+        overflow: hidden;
+        align-items: center;
+        background-image: url('../imgs/Logos/FondoPrincipal1.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+
+    #motoprin-1 {
+        display: none;
+    }
+
+    /*Estilo contenido 2 */
+    .img-contenedor {
+        flex-direction: column;
+        padding: 0 5%;
+
+    }
+
+    #mot,
+    #ase,
+    #acc {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .saludo h2 {
+        font-size: 24px;
+    }
+
+    .contenido_2 img {
+        height: 180px;
+        border-radius: 10%;
+        border: 5px solid #0e0a38;
+        box-shadow: 1px 1px 1px #1e1f22;
+    }
+
+    /*Estilo contenido 3 */
+
+    .contenido_3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-c3 p {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    /*Estilo contenido 4 */
+    .imagen img {
+        display: none;
+    }
+
+    .contenido_4 {
+        display: flex;
+        background-color: #ffffff;
+        padding: 40px 20px;
+        max-width: 1500px;
+        margin: 0 auto;
+        /* Centramos la sección */
+        box-sizing: border-box;
+    }
+
+    .texto {
+        text-align: left;
+        box-sizing: border-box;
+    }
+
+    .texto h1 {
+        font-size: 1.5em;
+        margin: 0;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+
+
+    .descripcion h2 {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+
+    .descripcion h3 {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+
+    .descripcion p {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+
+    button {
+        color: #000000;
+        padding: 5px 10px;
+        font-size: 1.3em;
+        border-radius: 10px;
+    }
+
+}

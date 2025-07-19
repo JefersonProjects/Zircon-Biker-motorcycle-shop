@@ -1,0 +1,189 @@
+
+.cuerpo-footer{
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.footer-zircon {
+    background-color: #121315;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: auto;
+}
+
+.footer-zircon * {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    border: none;
+}
+
+.footer-zircon .fila {
+    padding: 2em 1em;
+}
+
+.footer-zircon .fila.primaria {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: stretch;
+    gap: 1em;
+}
+
+.footer-zircon .columna {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em;
+    min-height: 15em;
+}
+
+.footer-zircon h3 {
+    width: 100%;
+    text-align: left;
+    color: gold;
+    font-size: 1.5em;
+}
+
+.footer-zircon .lista-enlaces {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-zircon .item-enlace:not(:first-child) {
+    margin-top: 0.5em;
+}
+
+.footer-zircon .lista-enlaces .item-enlace a {
+    transition: color 0.3s linear 0.05s;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-zircon .lista-enlaces .item-enlace a:hover {
+    color: yellow;
+}
+
+.footer-zircon .acerca p {
+    text-align: justify;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.footer-zircon input,
+.footer-zircon button {
+    font-size: 1em;
+    padding: 0.5em;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.footer-zircon button {
+    background-color: #2a8ded;
+    color: #ffffff;
+}
+
+.footer-zircon .social a {
+    color: white;
+}
+
+.footer-zircon .social {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5em;
+    flex-direction: row;
+    margin-top: 0.5em;
+    background-color: none !important;
+}
+.footer-zircon .social i {
+    transition: color 0.3s linear 0.05s;
+}
+.footer-zircon .social i:hover {
+    color: yellow;
+}
+
+.footer-zircon .fila.secundaria {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.footer-zircon .fila.secundaria i {
+    font-size: 1.8em;
+    color: lightgoldenrodyellow;
+}
+
+.footer-zircon .fila.secundaria div {
+    transition: background-color 0.2s linear 0.05s;
+    padding: 1em 0;
+    width: 100%;
+}
+
+.footer-zircon .fila.secundaria div:hover {
+    background-color: #25262e;
+}
+
+.footer-zircon .fila.derechos-de-autor {
+    padding: 0.6em 1em;
+    background-color: #25262e;
+}
+
+.footer-zircon .fila.derechos-de-autor p {
+    font-size: 0.9em;
+    text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+    .footer-zircon .fila.primaria {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-zircon .fila.secundaria {
+        flex-direction: column;
+        padding: 0.5em;
+    }
+
+    .footer-zircon .fila.secundaria {
+        flex-direction: column;
+    }
+
+    .footer-zircon .fila.secundaria div {
+        padding: 0.5em 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer-zircon {
+        font-size: 0.8rem;
+    }
+
+    .footer-zircon h3 {
+        font-size: 1em;
+    }
+
+    .footer-zircon .social {
+        flex-direction: flex;
+        align-items: center;
+    }
+
+    .footer-zircon .social a {
+        margin: 5px 0;
+    }
+
+    .footer-zircon .fila.secundaria i {
+        font-size: 2em;
+    }
+
+    .footer-zircon .fila.secundaria p {
+        font-size: 1em;
+    }
+
+    .footer-zircon .fila.derechos-de-autor p {
+        font-size: 1em;
+    }
+}

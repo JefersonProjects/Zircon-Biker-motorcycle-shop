@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info_1, #info_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2em;
+    text-align: center;
+}
+
+#info_1 {
+    min-height: 100vh; /* Asegura que ocupe al menos la altura de la ventana */
+    background-image: url(../imgs/Logos/fondoinfo.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+
+#info_1 p {
+    color: #e6e9f0;
+    font-size: 2.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 1px 3px #2f2f30;
+    margin-bottom: 1em;
+}
+
+#videoface {
+    transition: box-shadow 0.3s linear 0.05s;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Asegura que mantenga una relación de aspecto 16:9 */
+    border-radius: 20px;
+    box-shadow: 5px 5px 2px #2b2b2c;
+    margin: 1em 0;
+}
+
+#info_2 {
+    min-height: 50vh; /* Ajusta según tus necesidades */
+    background-color: #151516;
+}
+
+#info_2 p {
+    color: #c0c3ca;
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 1px 3px #2f2f30;
+    margin-bottom: 1em;
+}
+
+#mapa_info {
+    transition: box-shadow 0.3s linear 0.05s;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    aspect-ratio: 4 / 3; /* Asegura que mantenga una relación de aspecto 4:3 */
+    border-radius: 10px;
+    border: 6px solid rgb(235, 199, 40);
+    box-shadow: 2px 2px 2px #858586;
+}
+
+#videoface:hover{
+    box-shadow: 7px 7px 3px #161616;
+}
+
+#mapa_info:hover{
+    box-shadow: 4px 4px 4px #7d7d7e;
+}
+
+@media (max-width: 1200px) {
+    #info_1 p {
+        font-size: 2em;
+    }
+
+    #info_2 p {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 800px) {
+    #info_1 p {
+        font-size: 1.5em;
+    }
+
+    #info_2 p {
+        font-size: 1.5em;
+    }
+
+    #videoface, #mapa_info {
+        max-width: 90%;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    #info_1 p {
+        font-size: 1.2em;
+    }
+
+    #info_2 p {
+        font-size: 1.2em;
+    }
+
+    #videoface, #mapa_info {
+        max-width: 100%;
+        height: auto;
+    }
+}
